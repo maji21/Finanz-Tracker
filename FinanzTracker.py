@@ -5,13 +5,11 @@ def add_ausgaben(ausgaben, beschreibung, betrag):
     ausgaben.append({"Beschreibung": beschreibung, "Betrag": betrag})
     print(f"Ausgabe für: {beschreibung}, Betrag: {betrag} wurde hinzugefügt")
 
-
 def gesamt_ausgaben(ausgaben):
     sum = 0
     for i in ausgaben:
         sum += i["Betrag"]
     return sum
-
 
 def get_guthaben(budget, ausgaben):
     return budget - gesamt_ausgaben(ausgaben)
