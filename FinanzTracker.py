@@ -1,6 +1,5 @@
 import json
 
-
 def add_ausgaben(ausgaben, beschreibung, betrag):
     ausgaben.append({"Beschreibung:": beschreibung, "Betrag:": betrag})
     print(f"Ausgabe(n) für  : {beschreibung} , Betrag : {betrag} wurde(n) hinzugefügt")
